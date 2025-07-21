@@ -1,0 +1,66 @@
+==Using the Premium Tool== [Simple Guide]
+
+If you liked the tool, please rate it on GitHub.
+
+CONTENTS
+
+1) Usage Steps
+2) Troubleshooting
+
+==USAGE STEPS==
+
+>>> python LaunchTool.py
+
+Step 1: Store accounts with manager.py for scraping and adding purposes
+
+i) Open the terminal in the repository directory and enter the command
+>>> python LaunchTool.py
+Option: 1
+ii) For the account manager, choose option 1.
+1. Enter the API ID, API hash, and phone number if you already have one from www.telegram.org.
+To add more accounts, enter "y." Otherwise, enter "n" and press Enter.  You can obtain your API ID and Hash directly from the tool by choosing option (2) Extract API credentials automatically.
+iii) To filter out all banned accounts, choose option 3. All banned accounts will be deleted.
+iv) To display all accounts, choose option 4.
+v) To delete accounts, choose option 5. Then select the account to delete and press Enter.
+
+Step 2: Retrieving Members with scraper.py
+
+>>> python LaunchTool.py
+Option: 2
+
+i) Run the script in the terminal >>> python scraper.py
+ii) Select an account to retrieve and press Enter.
+iii) Choose whether you want to retrieve data from a public or private group.
+PUBLIC GROUPS
+Suppose the username of the public group is @ThisGroup. Enter only "ThisGroup". Omit "@" and press Enter.
+ PRIVATE GROUPS
+Copy the invitation link, paste it into the terminal, and press Enter.
+
+Retrieve members.
+
+You will then be asked if you want to filter for active users [LAST RECENTLY VISIT]. Select y/n and continue.
+
+Step 3: Add members with tsadder.py
+
+>>> python LaunchTool.py
+Choice: 3
+
+i) Launch the terminal >>> python tsadder.py
+ii) Sessions will be created, and you will be prompted for a login code if you are not logged in. IF YOU DON'T HAVE A LOGIN CODE, PRESS "s" AND ENTER TO PASS.
+iii) Then enter the username of the public group without the @ sign. Logins will be accepted from all accounts.
+iv) Then enter the number of accounts to use.
+EACH ACCOUNT WILL HAVE 60 USERS TO ADD.  THIS NUMBER MAY BE LESS THAN 60 DUE TO PRIVACY RESTRICTIONS OR A PEER FLOOD ERROR.
+v) Then read the warning and press Enter to continue.
+vi) Scripts will be launched and members will be added.
+
+==TROUBLESHOOTING==
+
+1) Members are not added.
+
+Answer: This may be because the account is limited. Try other accounts.
+
+2) Error during login.
+
+Answer: If you have two-factor authentication enabled, disable it. After logging in, you can re-enable it.
+
+If you have any problems, open an issue on GitHub or contact me on the Telegram group located at README.md.
